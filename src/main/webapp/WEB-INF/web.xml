@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>Movie</display-name>
+  <welcome-file-list>
+ <welcome-file>index.html</welcome-file>
+<welcome-file>login.jsp</welcome-file>
+<welcome-file>Log.jsp</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+
+
+<welcome-file>register.jsp</welcome-file>
+<welcome-file>User/home.jsp</welcome-file>
+<welcome-file>Admin/home.jsp</welcome-file>
+<welcome-file>profile.jsp</welcome-file>
+<welcome-file>myBookings.jsp</welcome-file>
+<welcome-file>cancelBooking.jsp</welcome-file>
+<welcome-file>changeCredentials.jsp</welcome-file>
+<welcome-file>changeMovies.jsp</welcome-file>
+<welcome-file>changeUpcoming.jsp</welcome-file>
+<welcome-file>editUpcoming.jsp</welcome-file>
+<welcome-file>index.htm</welcome-file>
+<welcome-file>default.html</welcome-file>
+<welcome-file>default.jsp</welcome-file>
+<welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>Register</servlet-name>
+    <servlet-class>com.Control.Register</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>Register</servlet-name>
+    <url-pattern>/Register</url-pattern>
+</servlet-mapping>
+
+
+    
+
+
+
+
+<!--  LoginServlet  -->
+<servlet>
+<servlet-name>LoginServ</servlet-name>
+<servlet-class>com.Control.LoginServ</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>LoginServ</servlet-name>
+<url-pattern>/LoginServ</url-pattern>
+</servlet-mapping>
+
+<!--  LogoutServlet  -->
+<!-- <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>com.Control.LogoutServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/logout</url-pattern>
+</servlet-mapping> -->
+
+
+<!--  BookServlet  -->
+<servlet>
+    <servlet-name>BookServlet</servlet-name>
+    <servlet-class>com.Control.BookServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>BookServlet</servlet-name>
+    <url-pattern>/BookServlet</url-pattern>
+</servlet-mapping>
+
+
+
+<!--  changeCrendentialsServlet -->
+<servlet>
+    <servlet-name>changeCredentialsServlet</servlet-name>
+    <servlet-class>com.Control.changeCredentialsServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>changeCredentialsServlet</servlet-name>
+    <url-pattern>/changeCredentialsServlet</url-pattern>
+</servlet-mapping>
+
+
+<!--  changeMoviesServlet  -->
+<servlet>
+<servlet-name>changeMoviesServlet</servlet-name>
+<servlet-class>com.Control.changeMoviesServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>changeMoviesServlet</servlet-name>
+<url-pattern>/changeMoviesServlet</url-pattern>
+</servlet-mapping>
+
+<!-- UpdateUpcomingServlet  -->
+<servlet>
+<servlet-name>UpdateUpcomingServlet</servlet-name>
+<servlet-class>com.Control.UpdateUpcomingServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>UpdateUpcomingServlet</servlet-name>
+<url-pattern>/UpdateUpcomingServlet</url-pattern>
+</servlet-mapping>
+
+<!-- changeUpcomingServlet -->
+<servlet>
+<servlet-name>changeUpcomingServlet</servlet-name>
+<servlet-class>com.Control.changeUpcomingServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>changeUpcomingServlet</servlet-name>
+<url-pattern>/changeUpcomingServlet</url-pattern>
+</servlet-mapping>
+
+
+
+
+
+
+
+</web-app>

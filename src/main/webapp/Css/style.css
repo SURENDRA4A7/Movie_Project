@@ -1,0 +1,15 @@
+@charset "UTF-8";
+body {
+            background-image: radial-gradient(circle at left, green, red);
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+        
+ .container.mt-5 {
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), 
+                url("Images/bookmyshow.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+ 
